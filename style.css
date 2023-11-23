@@ -25,11 +25,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap:clamp(2rem,2vw,2vw);
-    margin-inline:clamp(2rem,10vw,10vw);
+    margin-inline:clamp(10rem,10vw,10vw);
 }
 .grid-container > div{
     border-radius:clamp(.4rem,.4vw,.4vw);
-    padding: clamp(2rem,2vw,2vw);
+    padding: clamp(1.5rem,1vw,1vw);
 }
 .flex-profile-item{
     display: flex;
@@ -60,7 +60,7 @@ body{
     color: var(--lightgray);
 }
 .title{
-    font-size: clamp(1.4rem,1.4vw,1.4vw);
+    font-size: clamp(1.3rem,1.3vw,1.3vw);
     font-weight: 600;
     color: var(--white);
 }
@@ -141,7 +141,7 @@ img{
     .grid-container{
         display: flex;
         flex-direction: column;
-        margin-inline:clamp(0.4rem,9vw,15vw);
+        margin-inline:clamp(6rem,8vw,8vw);
     }
     .grid-container > div{
         height: min-content;
@@ -149,5 +149,14 @@ img{
 
 
 }
-
+@media screen and (max-width:630px){
+    .grid-container{
+        margin-inline:clamp(3rem,7vw,12vw);
+    }
+}
+@media screen and (max-width:458px) {
+    .grid-container{
+        margin-inline:clamp(0.5rem,0.5vw,0.5vw);
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
